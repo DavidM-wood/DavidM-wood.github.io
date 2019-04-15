@@ -11,14 +11,26 @@
 		color: #f2f2f2;
 	  text-align: center;
 	}
-/* title*/
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+	padding:20px;
+}
+
+.datadisplay {
+	height: 50px;
+	width: 100%;
+	background-color: blue;
+	padding-top: 40px;
+}
+
+
 .topbar {
-	overflow: hidden;
+
 	background-color: #279b48;
 	height :150px;
 	width :100%;
@@ -36,21 +48,117 @@ body {
   text-align: center;
   
 }
+img {
+	z-index:100; 
+	padding:0px;
+}
+
+.flip-box{	
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+
+}
+.flip-box-inner {
+	padding: 0px;
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  text-align: center;
+	  transition: transform 0.8s;
+	  transform-style: preserve-3d;
+	}
+
+.flip-box:hover .flip-box-inner {
+	  transform: rotateY(180deg);
+	}
+.flip-box-front, .flip-box-back {
+	padding: 0px;
+	background-color: #279b48;
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  backface-visibility: hidden;
+	}
+.flip-box-back {
+	  background-color: "red";
+	  color: white;
+	  transform: rotateY(180deg);
+	}
+.center{
+	text-align: center;
+}
+.content{
+	min-height: 200px;
+	padding: 10px;
+	background-color:red;
+}
+
+.top-left	{
+	z-index:0;
+	margin-top:0;
+}
+
+.donate-button{
+	margin-top:top-right;
+	float: right;
+}
+
+.donwload-button{
+
+}
+
+
 
 </style>
 
 <body>
 
-  
-</div>
-
-<div class="topbar">
+ <div class="topbar">
   <p class = "topbartext">Good Health and Well Being</p>
+ <button class="donate-button">DONATE</button>
 
-<div style="padding-center:16px">
+	  <div class= "top-left">
+	  <a href="web_design_front_page.html" style="top:0px; display: block; position: fixed;"><button>Back</button></a>
+	  
+
+</div>
+</div>
+
+
+
+
+	<div class="content" style="padding-top: 150px;">
+
+		<div class="flip-box">
+			<div class="flip-box-inner">
+				<div class="flip-box-front">
+					<div class = "center">
+						<img src="img/goal3.png" alt="Avatar" style="width:300px; height:300px;"/>
+					</div>
+				</div>
+				<div class="flip-box-back">
+					<h3>what can YOU do to help?</h3>
+					<p>Answer</p>
+				</div>
+			</div>
+		</div>
+		<div class = "datadisplay">
+			<button style="margin: auto; display: block;">Download</button>
+		</div>
 
   
-</div>
+	</div>
+
+
 
 </body>
 </html>
