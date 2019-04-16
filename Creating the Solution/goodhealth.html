@@ -24,7 +24,7 @@ p {
 .datadisplay {
 	height: 50px;
 	width: 100%;
-	background-color: blue;
+	background-color: #D24A35;
 	padding-top: 40px;
 }
 
@@ -35,6 +35,7 @@ p {
 	height :150px;
 	width :100%;
 	position: fixed;
+	z-index:1;
 }
 
 .topbartext{
@@ -89,7 +90,6 @@ img {
 	  backface-visibility: hidden;
 	}
 .flip-box-back {
-	  background-color: "red";
 	  color: white;
 	  transform: rotateY(180deg);
 	}
@@ -99,7 +99,7 @@ img {
 .content{
 	min-height: 200px;
 	padding: 10px;
-	background-color:red;
+	background-color:#D24A35;
 }
 
 .top-left	{
@@ -116,12 +116,32 @@ img {
 
 }
 .further-readings{
-	height: 50px;
+	height: 300px;
 	width: 100%;
-	background-color: white;
+	background-color: #D24A35;
 	padding-top: 40px;
 }
 
+.data-text{
+	color: #f2f2f2;
+  text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  justify-content: right;
+  text-align: center;
+
+}
+
+.further-readings-text{
+	color: #f2f2f2;
+  text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  justify-content: right;
+  text-align: center;
+}
 
 </style>
 
@@ -152,13 +172,25 @@ img {
 				</div>
 				<div class="flip-box-back">
 					<h3>what can YOU do to help?</h3>
-					<p>Answer</p>
+					<p>The easiest way for you to help is to donate to a charity that helps with getting clean water to developing countries.</p>
 				</div>
 			</div>
 		</div>
+		
+		<div class="data-text">
+			<p>Data</p>
+	</div>
+		
 		<div class = "datadisplay">
-			<button style="margin: auto; display: block;">Download</button>
+			<a href="data/data (4).json"><button style="margin: auto; display: block; background-color: #279b48;">Download data for basic drinking water</button></a>
+
+			<a href="data/data (5).json"><button style="margin: auto; display: block; background-color:#279b48;">Download data for basic sanitation services</button></a>
 		</div>
+
+		<div class ="further-readings-text">
+			<p>Further Readings</p>
+		</div>
+
 		<div class = "further-readings">
 			<a href="http://apps.who.int/gho/data/node.main.WSHWATER?lang=en"><button style="margin:auto; display:block; background-color:#279b48;">WHO basic and safely managed drinking water</button></a>
 
